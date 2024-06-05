@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Root Academy</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/fontawesome.min.css  " />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+ 
+  <!-- container div -->
+  <div class="container">
+    <!-- upper button section to select
+               the login or signup form -->
+    <div class="slider"></div>
+    <div class="btn">
+      <button class="login">Login</button>
+      <button class="signup">Signup</button>
+    </div>
+    <div class="alert alert-danger d-none" role="alert" id="errAlert">
+      
+    </div>
+    <div class="alert alert-success d-none" role="alert" id="successAlert">
+      
+    </div>
+    <!-- Form section that contains the
+               login and the signup form -->
+    <div class="form-section">
+
+      <!-- login form -->
+      <div class="login-box">
+        <input type="email" class="email ele" placeholder="youremail@email.com" id="loginEmail">
+        <input type="password" class="password ele" placeholder="password" id="loginPassword">
+        <button class="clkbtn" id="loginBtn">Login</button>
+      </div>
+
+      <!-- signup form -->
+      <div class="signup-box">
+        <div class="alert alert-warning d-none" role="alert" id="singnupAlert">
+          
+        </div>
+        <input type="text" class="name ele" placeholder="Enter your name" id="registerName">
+        <input type="email" class="email ele" placeholder="youremail@email.com" id="registerEmail">
+        <input type="password" class="password ele" placeholder="password" id="registerPassword">
+        <input type="password" class="password ele" placeholder="Confirm password" id="registerConfirmPassword">
+        <button id="registerBtn" class="clkbtn">Signup</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
